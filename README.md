@@ -5,7 +5,7 @@
 #### Redis-CLI
 
 ## USE CASE:
-Sometimes you can have the need to remove a set of keys that match with a specific pattern in your Redis server (e.g. "mypattern*", "*mypattern*", "users*", etc.). To reach this goal you can develop a solution in some language (python, c#, java, etc.) or, alternatively, you can use Redis CLI. The script uses the second strategy.
+Sometimes you can have the need to remove a set of keys that match with a specific pattern in your Redis server (e.g. "mypattern*", "*mypattern*", "users*", "spring:session:sessions*", etc.). To reach this goal you can develop a solution in some language (python, c#, java, etc.) or, alternatively, you can use Redis CLI. The script uses the second strategy.
 
 ## How the script works:
 The script uses Redis CLI, running two commands:
