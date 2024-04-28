@@ -15,8 +15,8 @@ DEL, to delete the keys (one at once).
 The script read before all the keys matching the pattern using the command Redis CLI KEYS and then, it runs the command Redis CLI DEL to remove them. The script, to pipe each key to Redis CLI DEL command, use xargs, so each key can be deleted from Redis.
 
 ## Source Code:
-<td>
-  #!/bin/bash
+```
+#!/bin/bash
 
 #######################################################################################################
 # Set your parameters
@@ -45,6 +45,7 @@ echo "Deleting all keys with pattern $pattern"
 redis-cli -p $port -h $host -a $password  --no-auth-warning KEYS $pattern | xargs redis-cli -p $port -h $host -a $password --raw  --no-auth-warning DEL
 echo "Deletion is successfull!"
 
-</td>
+```
+
 ## Run the script:
 you@yourworkstation$./clean-keys-with-pattern.sh
