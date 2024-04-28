@@ -1,8 +1,8 @@
 # Redis: deleting many keys with pattern matching using bash shell + redis-cli
 ## What do you need?
-#### A bash shell
-#### Redis installed with authentication enabled.
-#### Redis-CLI
+#### 1. A bash shell
+#### 2. Redis installed with authentication enabled.
+#### 3. Redis-CLI
 
 ## USE CASE:
 Sometimes you can have the need to remove a set of keys that match with a specific pattern in your Redis server (e.g. "mypattern*", "*mypattern*", "users*", "spring:session:sessions*", etc.). To reach this goal you can develop a solution in some language (python, c#, java, etc.) or, alternatively, you can use Redis CLI. The script uses the second strategy.
